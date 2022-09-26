@@ -35,3 +35,45 @@
     display: inline-block;
     margin-left: 30px;
 }
+
+.page-header div ul li a {
+    color:#B5C6AC;
+}
+
+.page-header div ul li a:hover {
+    color: white;
+}
+
+.content {
+    width: 100%;
+    background-color: #B5C6AC;
+    font-family: 'Avant Garde', 'Century Gothic', 'Optima', sans-serif;
+}
+
+.content h2 {
+    display: block;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #31302C;
+}
+
+.content section ul li a:link, a:visited {
+    background-color: #31302c;
+    color: #B5C6AC;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.content section ul li a:hover {
+    color:#ffffff
+
+}
+
+.MM-Photo {
+    max-width: 300px;
+    border: 10px solid #31302C;
+    margin: 10px;
+    padding: 0px;
+}
