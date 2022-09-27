@@ -2,55 +2,61 @@
 <html lang="en-us">
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Madalyn Marino Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-    
-<header class="page-header">
-    <h1>Madalyn Marino Portfolio</h1>
-        <div>
-            <ul>
-                <li> <a href="#about-me">About Me</a></li>
-                <li> <a href="#resume">Resume</a></li>
-                <li> <a href="#recent-work">Recent Work</a></li>
-                <li> <a href="#contact-me">Contant Me</a></li>
-            </ul>   
-        </div> 
-</header>
 
-<body class="content">
-    <section class="section-names">
-        <div id="about-me"><h2>About Me</h2></div>
-        
-        <div id="resume"><h2>Resume</h2></div>
-            
-        <div id="recent-work"><h2>Recent Work</h2></div>
-            
-        <div id="contact-me"><h2>Contact Me</h2></div>
-    </section>    
+<body>
     
+<header>
+    <h1>Madalyn Marino Portfolio</h1>
+</header>
+    
+<nav>
+    <a href="#about-me">About Me</a>
+    <a href="#resume">Resume</a>
+    <a href="#recent-work">Recent Work</a>
+    <a href="#contact-me">Contant Me</a>
+</nav>
+
+
+<main>
+ 
     <section class="filler">
-        <div id="bio">
+        <!-- <div id="bio"> -->
+        <div class="block"> 
+            <div id="about-me"><h2>About Me</h2></div>
             <img class="MM-Photo" src="./assets/images/MM-Photo.jpg" alt="Photo of Madalyn Marino"/>
             <p>This is where I will fill in my bio.</p>
         </div>
     </section> 
 
     <section class="filler">
-        <div id="resume-block">
-            <p><a href="./assets/Madalyn Marino Resume.pdf" target="_blank">Resume PDF</a></p>
+        <!-- <div id="resume-block"> -->
+        <div class="block">
+        <div id="resume"><h2>Resume</h2></div>
+            <p><a href="./assets/Madalyn Marino Resume.pdf" target="_blank"><img class="resume-image" src="./assets/images/Madalyn Marino Resume.jpg" alt="Resume PDF"/></a></p>
         </div>
     </section>
 
     <section class="filler">
-        <div id="portfolio">
-
+        <!-- <div id="portfolio"> -->
+        <div class="block">
+        <div id="recent-work"><h2>Recent Work</h2></div>
+            <h3>Sample Project 1</h3>
+            <h3>Sample Project 2</h3>
+            <br>
+            <img class="project-1-photo" src="./assets/images/project-1-photo.jpg" alt="laptop and notebook open on desk"/> 
+            <img class="project-2-photo" src="./assets/images/project-2-photo.jpg" alt="laptop and camera on outdoor table"/>
         </div>
     </section>
         
     <section class="filler">
-        <div id="contact">
+        <!-- <div id="contact"> -->
+        <div class="block">
+        <div id="contact-me"><h2>Contact Me</h2></div>
             <ul class="contact-links">
                 <li><a href="https://github.com/madalynmm" target="_blank">Github</a></li>
                 <li><a href="mailto:madalynmm@outlook.com">madalynmm@outlook.com</a></li>
@@ -59,6 +65,8 @@
         </div> 
     </section>
     
+</main>
+
 </body>
 
 

@@ -1,34 +1,33 @@
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
 }
 
-.page-header {
+/* .page-header {
     padding: 30px;
     font-family: 'Avant Garde', 'Century Gothic', 'Optima', sans-serif;
     background-color: #31302C;
-}
+} */
 
-.page-header h1 {
+/* .page-header h1 {
     display: inline-block;
     margin-left: 15px;
     font-family: 'Courier New', 'Courier', monospace;
     font-size: 45px;
     font-weight: lighter; 
     color: #ffffff;
-}
+} */
 
-.page-header div {
+/* .page-header div {
     padding: 15px;
     float: right;
     font-size: 18px;
     color: #B5C6AC; 
-}
+} */
 
-.page-header div ul li {
+/* .page-header div ul li {
     list-style-type: none;
     display: inline-block;
+    text-align: left;
     margin-left: 30px;
 }
 
@@ -39,42 +38,77 @@
 
 .page-header div ul li a:hover {
     color: white;
-}
+} */
+
 /* all of the code above this is good */
 
 
-.content {
+/* .content {
+    background-color: #B5C6AC;
+    font-family: 'Avant Garde', 'Century Gothic', 'Optima', sans-serif;
+    font-size: 20px;
+} */
+
+/* trying flex positioning using aside bar */
+
+body {
+    margin: 0;
     background-color: #B5C6AC;
     font-family: 'Avant Garde', 'Century Gothic', 'Optima', sans-serif;
     font-size: 20px;
 }
 
-.section-names {
-    margin-right: 20px;
-    padding: 20px;
-    width: 20%;
-    height: 100%;
-    float: left;
+header {
+    padding: 10px;
+    text-align: center;
+    background-color: #31302C;
+    color: #ffffff;
+    font-family: 'Courier New', 'Courier', monospace;
+    font-size: 25px;
+     
 }
 
-.content h2 {
-    padding: 20px;
-    margin-left: 30px;
-    font-size: 30px;
+header h1 {
     font-weight: lighter;
-    color: #31302C;
 }
 
-.filler {
-    background-color: #596649;
-    width: 75%;
+nav {
+    display: flex;
+    background-color: #31302C; 
+    font-family: 'Avant Garde', 'Century Gothic', 'Optima', sans-serif;
+}
+
+nav a {
+    color:#B5C6AC;
+    padding: 10px 30px 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
     color: white;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    flex: 1;
+    background-color: #596649;
+    color: #ffffff;
     margin: 20px;
     padding: 20px;
-    text-align: center;
-    float: right;
     border-radius: 20px;
-    height:fit-content ;
+    
+}
+
+section h2 {
+    font-size: 30px;
+    font-weight: lighter;
+    color: #B5C6AC;
+    text-align: center;
 }
 
 /* this code styles the contact links */
@@ -116,7 +150,16 @@
 }
 /* this code styles the resume link */
 
-/* styling for profile photo */
+.filler div h3 {
+    color:#B5C6AC;
+    font-weight: lighter;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+
+}
+
+/* styling for photos */
 .MM-Photo {
     max-width: 250px;
     border: 10px solid #31302C;
@@ -124,3 +167,36 @@
     padding: 0px;
     float: right;  
 } 
+
+.project-1-photo, .project-2-photo {
+    max-width: 400px;
+    border: 10px solid #31302C;
+    margin: 20px;
+    margin-right: 50px;
+    padding: 0px;
+    display: inline;
+}
+
+.resume-image {
+    max-width: 250px;
+    border: 10px solid #31302C;
+    margin: 20px;
+    padding: 0px;
+    float: left;
+}
+
+@media screen and (min-width: 768px) {
+    .filler {
+      flex-direction:column;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    main, nav {
+      flex-direction: column;
+    }
+    aside {
+        order: 1;
+    }
+}
