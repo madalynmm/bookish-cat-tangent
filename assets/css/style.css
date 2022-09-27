@@ -77,6 +77,7 @@
     height:fit-content ;
 }
 
+/* this code styles the contact links */
 .filler ul {
     list-style-type: none;
     padding: 20px;
@@ -99,6 +100,21 @@
 .filler ul li a:hover {
     color:#ffffff
 }
+/* this code styles the contact links */
+
+/* this code styles the resume link */
+.filler p a:link, a:visited {
+    color: #B5C6AC;
+    padding: 15px 20px;
+    text-align: right;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.filler p a:hover {
+    color:#ffffff
+}
+/* this code styles the resume link */
 
 /* styling for profile photo */
 .MM-Photo {
