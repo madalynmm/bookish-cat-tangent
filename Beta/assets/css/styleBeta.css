@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Arima:100,200,300,regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Bodoni+Moda:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+    box-sizing: border-box;
+    max-width: 1920px;
+}
+
+body {
+    display: block;
+    margin: 0;
+}
+
+.landing-page {
+    display: flex;
+    text-align: center;
+    margin: 0;
+    justify-content: center;
+    background-color: #F6F6F6;
+}
+
+.opener-page h1 {
+    font-family: Bodoni Moda, serif;
+    font-size: 125px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.opener-page h3 {
+    font-family: Quicksand, sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+#portfolio-header {
+    margin: 100px 0px 40px 0px;
+}
+
+#web-sub-header {
+    margin: 80px 0px 80px 0px;
+}
+
+.nav-links a {
+    font-family: Quicksand, sans-serif;
+    font-weight: lighter;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    margin: 35px;
+}
+
+.nav-links a:hover {
+    color: #74030b;
+}
+
+#mm-photo {
+   max-height: 937px;
+}
+
+#bio h2, #recent-work h2, #contact-section h2 {
+    font-family: Bodoni Moda, serif;
+    font-size: 60px;
+    text-align: center;
+}
+
+#bio p {
+    font-family: Quicksand, sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    padding: 0px 125px 0px 125px;
+    text-align: justify;
+    margin: 0;
+}
+
+#recent-work {
+    background-color: #F6F6F6;
+    width: 100vw;
+    height: auto;
+}
+
+#bio {
+    width: 100vw;
+    height: 75vw;
+}
+
+.project-photos {
+    width: 100vw;
+    height: auto;
+}
+
+.portfolio-card h3 a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    padding:10px;
+}
